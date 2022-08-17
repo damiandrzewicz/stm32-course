@@ -1,0 +1,91 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build all (Release)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Release",
+                "-j8",
+                "all"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build clean (Release)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Release",
+                "-j8",
+                "clean"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build cmake (Release)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Release",
+                "-j8",
+                "cmake"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build all (Debug)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Debug",
+                "-j8",
+                "all"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build clean (Debug)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Debug",
+                "-j8",
+                "clean"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build cmake (Debug)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Debug",
+                "-j8",
+                "cmake"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Flash (Debug)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Debug",
+                "flash"
+            ],
+            "group": "build",
+        },
+        {
+            "type": "shell",
+            "label": "Flash (Release)",
+            "command": "make",
+            "args": [
+                "BUILD_TYPE=Release",
+                "flash"
+            ],
+            "group": "build"
+        }
+    ]
+}
